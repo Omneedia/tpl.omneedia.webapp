@@ -229,40 +229,40 @@
 			}); else cb();
 		};
 		setTimeout(function(){
-			require(["Contents/Settings"], function() {
-				require.config({
-					paths: {
-						"io": Settings.LIVERELOAD+'/socket.io/socket.io.js'
-					}
-				});					
-				require(['io'],function(io) {
-					var socket = io.connect(Settings.LIVERELOAD);
-					socket.on('connect', function () {
-						try {
-							App.unblur();
-						} catch(e) {};						
-						$('.omneedia-overlay').hide();
-					});
-					socket.on('disconnect', function () {
-						try {
-							App.blur();
-						} catch(e) {};
-					});
-					socket.on('session', function (data) {
-						var data=JSON.parse(data);
-						if (!localStorage.getItem("session")) localStorage.setItem('session',data.session); else {
-							if (localStorage.getItem("session")!=data.session) {
-								localStorage.setItem('session',data.session);
-								try {										
-									App.blur();
-								}catch(e) {
-								};
-								location.reload();
-							}
-						};
-					});																				
-				});			
+			require(["Contents/Settings"], function() {		
 				bootstraploader(Settings.FRAMEWORKS,0, function(){
+                    require.config({
+                        paths: {
+                            "io": Settings.LIVERELOAD+'/socket.io/socket.io.js'
+                        }
+                    });					
+                    require(['io'],function(io) {
+                        var socket = io.connect(Settings.LIVERELOAD);
+                        socket.on('connect', function () {
+                            try {
+                                App.unblur();
+                            } catch(e) {};						
+                            $('.omneedia-overlay').hide();
+                        });
+                        socket.on('disconnect', function () {
+                            try {
+                                App.blur();
+                            } catch(e) {};
+                        });
+                        socket.on('session', function (data) {
+                            var data=JSON.parse(data);
+                            if (!localStorage.getItem("session")) localStorage.setItem('session',data.session); else {
+                                if (localStorage.getItem("session")!=data.session) {
+                                    localStorage.setItem('session',data.session);
+                                    try {										
+                                        App.blur();
+                                    }catch(e) {
+                                    };
+                                    location.reload();
+                                }
+                            };
+                        });																				
+                    });	
 					require(["Contents/Application/app"], function() {					
 						
 					});
