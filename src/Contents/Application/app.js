@@ -27,11 +27,18 @@ Manifest = function()
 	
 };
 
-Ext.require(Settings.MODULES, function()
-{
-	for (var i=0;i<Settings.API.length;i++)
-	{
-		App.using(Settings.API[i]);
-	};
-	App.load();
-});
+function __loader__(i) {
+	if (!i) var i=0;
+	if (i<Settings.MODULES.length) {
+		Ext.require(Settings.MODULES[i],function() {
+			__loader__(i+1);
+		});
+	} else {
+		for (var i=0;i<Settings.API.length;i++)
+		{
+			App.using(Settings.API[i]);
+		};
+		App.load();	
+	}
+};
+__loader__();
