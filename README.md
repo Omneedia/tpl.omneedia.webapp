@@ -1,14 +1,14 @@
-# {package.namespace}
+# tpl.omneedia.webapp
 
-## {package.title}
+## tpl.omneedia.webapp
 
-{package.description}
+Package description goes here
 
-{package.copyright}
+Copyright (c) 2016 By OMNEEDIA
 
 ## License
 
-(The MIT License)
+BSD
 
 Copyright (c) 2002 - 2014 Omneedia.com
 
