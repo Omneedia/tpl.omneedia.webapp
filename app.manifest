@@ -33,18 +33,19 @@
             "type": "desktop",
             "version": "6.0.1",
             "theme": "classic",
+			"style": "classic",
             "src": [
                 "http://cdn.omneedia.com/public/ext/gpl/{version}/ext-all-debug.js",
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/classic/theme-{theme}/theme-{theme}-debug.js"
+                "http://cdn.omneedia.com/public/ext/gpl/{version}/{style}/theme-{theme}/theme-{theme}-debug.js"
             ],
             "res": [
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/classic/theme-{theme}/resources/theme-{theme}-all-debug.css"
+                "http://cdn.omneedia.com/public/ext/gpl/{version}/{style}/theme-{theme}/resources/theme-{theme}-all-debug.css"
             ]
         },
         {
             "name": "JQUERY",
-            "version": "3.0.0",
-            "src": "http://cdnjs.cloudflare.com/ajax/libs/jquery/{version}/jquery.js"
+            "version": "3.1.0",
+            "src": "http://cdn.omneedia.com/public/jquery/3.1.0/jquery.js"
         }
     ],
     "auth": [],
