@@ -20,7 +20,8 @@ Manifest = function()
 		
 		launch: function () 
 		{
-
+			Ext.enableAriaButtons = false;
+			Ext.enableAriaPanels = false; 
 		}
 		
 	});

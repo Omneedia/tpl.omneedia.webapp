@@ -29,21 +29,22 @@
     ],
     "frameworks": [
         {
-            "name": "ext",
+            "name": "EXTJS",
             "type": "desktop",
-            "version": "4.2.1",
+            "version": "6.0.1",
             "theme": "classic",
             "src": [
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/ext-all-debug.js"
+                "http://cdn.omneedia.com/public/ext/gpl/{version}/ext-all-debug.js",
+                "http://cdn.omneedia.com/public/ext/gpl/{version}/classic/theme-{theme}/theme-{theme}-debug.js"
             ],
             "res": [
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/resources/ext-theme-{theme}/ext-theme-{theme}-all.css"
+                "http://cdn.omneedia.com/public/ext/gpl/{version}/classic/theme-{theme}/resources/theme-{theme}-all-debug.css"
             ]
         },
         {
-            "name": "jquery",
-            "version": "2.2.3",
-            "src": "http://cdn.omneedia.com/public/jquery/{version}/jquery.js"
+            "name": "JQUERY",
+            "version": "3.0.0",
+            "src": "http://cdnjs.cloudflare.com/ajax/libs/jquery/{version}/jquery.js"
         }
     ],
     "auth": [],
