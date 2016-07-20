@@ -30,12 +30,12 @@
     "frameworks": [
         {
             "name": "EXTJS",
-            "type": "desktop",
+            "type": "mobile",
             "version": "6.0.1",
             "theme": "classic",
-			"style": "classic",
+            "style": "classic",
             "src": [
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/ext-all-debug.js",
+                "http://cdn.omneedia.com/public/ext/gpl/{version}/ext-{style}-all-debug.js",
                 "http://cdn.omneedia.com/public/ext/gpl/{version}/{style}/theme-{theme}/theme-{theme}-debug.js"
             ],
             "res": [
