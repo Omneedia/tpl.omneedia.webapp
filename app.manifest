@@ -1,16 +1,16 @@
 {
-    "namespace": "tpl.omneedia.webapp",
+    "namespace": "{NAMESPACE}",
     "git": "",
-    "title": "tpl.omneedia.webapp",
-    "description": "Package description goes here",
-    "platform": "desktop",
-    "targets": [
-        "webapp"
-    ],
-    "uid": "e404d3a0-cc1d-418b-bd68-1ffef1b06551",
-    "version": "1.00",
+    "title": "{TITLE}",
+    "description": "{DESCRIPTION}",
+    "platform": "mobile",
+    "uid": "{UID}",
+    "version": "0.01",
     "build": "0",
-    "copyright": "Copyright (c) 2016 By OMNEEDIA",
+	"targets": [
+		"webapp"
+	],
+    "copyright": "{COPYRIGHT}",
     "license": "BSD",
     "author": {
         "name": "XXX",
