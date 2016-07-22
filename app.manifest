@@ -3,7 +3,7 @@
     "git": "",
     "title": "{TITLE}",
     "description": "{DESCRIPTION}",
-    "platform": "mobile",
+    "platform": "desktop",
     "uid": "{UID}",
     "version": "0.01",
     "build": "0",
