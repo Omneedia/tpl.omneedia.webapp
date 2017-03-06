@@ -11,7 +11,7 @@
 		"webapp"
 	],
     "copyright": "{COPYRIGHT}",
-    "license": "BSD",
+    "license": "bsd3",
     "author": {
         "name": "XXX",
         "mail": "xxx@xxx.com",
