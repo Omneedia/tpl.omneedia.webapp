@@ -3,13 +3,10 @@
     "git": "",
     "title": "{TITLE}",
     "description": "{DESCRIPTION}",
-    "platform": "desktop",
+    "platform": "webapp",
     "uid": "{UID}",
-    "version": "0.01",
+    "version": "0.0.1",
     "build": "0",
-	"targets": [
-		"webapp"
-	],
     "copyright": "{COPYRIGHT}",
     "license": "bsd3",
     "author": {
@@ -28,24 +25,24 @@
         "fr"
     ],
     "frameworks": [
-        {
+		{
             "name": "EXTJS",
             "type": "desktop",
             "version": "6.2.0",
             "theme": "classic",
             "style": "classic",
             "src": [
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/ext-{style}-all-debug.js",
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/{style}/theme-{theme}/theme-{theme}-debug.js"
+                "https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/ext-all-debug.js",
+                "https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/{theme}/theme-{style}/theme-{style}-debug.js"
             ],
             "res": [
-                "http://cdn.omneedia.com/public/ext/gpl/{version}/{style}/theme-{theme}/resources/theme-{theme}-all-debug.css"
+                "https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/{theme}/theme-{style}/resources/theme-{style}-all-debug.css"
             ]
         },
         {
             "name": "JQUERY",
-            "version": "3.1.0",
-            "src": "http://cdn.omneedia.com/public/jquery/3.1.0/jquery.js"
+            "version": "3.2.1",
+            "src": "https://cdnjs.cloudflare.com/ajax/libs/jquery/{version}/jquery.js"
         }
     ],
     "auth": [],
