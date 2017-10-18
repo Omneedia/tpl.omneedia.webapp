@@ -27,7 +27,6 @@
     "frameworks": [
 		{
             "name": "EXTJS",
-            "type": "desktop",
             "version": "6.2.0",
             "theme": "classic",
             "style": "classic",
@@ -37,7 +36,10 @@
             ],
             "res": [
                 "https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/{theme}/theme-{style}/resources/theme-{style}-all-debug.css"
-            ]
+            ],
+			"i18n": [
+				"https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/classic/locale/locale-{lang}.js"
+			]
         },
         {
             "name": "JQUERY",
