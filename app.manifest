@@ -21,34 +21,56 @@
         "tester": []
     },
     "langs": [
-        "en",
-        "fr"
+        "en-US",
+        "fr-FR"
     ],
+    "paths": {
+		"@omneedia": "http://cdn.omneedia.com",
+		"Contents": "Contents/Application/app", 
+		"Lib": "Contents/Application/app/libraries",
+		"Ext": "@omneedia/omneedia/modules/Ext",
+		"Ext.ux": "@omneedia/omneedia/modules/Ext/ux",
+		"Ext.plugin": "@omneedia/omneedia/modules/Ext/plugin",
+		"Ext.util": "@omneedia/omneedia/modules/Ext/util"        
+    },    
     "frameworks": [
-		{
+        {
             "name": "EXTJS",
             "version": "6.2.0",
             "theme": "classic",
             "style": "classic",
             "src": [
-                "https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/ext-all-debug.js",
-                "https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/{theme}/theme-{style}/theme-{style}-debug.js"
+                "@omneedia/ajax/libs/extjs/{version}/ext-all-debug.js",
+                "@omneedia/ajax/libs/extjs/{version}/{theme}/theme-{style}/theme-{style}-debug.js"
             ],
             "res": [
-                "https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/{theme}/theme-{style}/resources/theme-{style}-all-debug.css"
+                "@omneedia/ajax/libs/extjs/{version}/{theme}/theme-{style}/resources/theme-{style}-all-debug.css"
             ],
-			"i18n": [
-				"https://cdnjs.cloudflare.com/ajax/libs/extjs/{version}/classic/locale/locale-{lang}.js"
-			]
+            "i18n": [
+                "@omneedia/ajax/libs/extjs/{version}/classic/locale/locale-{lang}.js"
+            ]
         },
-        {
-            "name": "JQUERY",
-            "version": "3.2.1",
-            "src": "https://cdnjs.cloudflare.com/ajax/libs/jquery/{version}/jquery.js"
-        }
+		{
+			"name": "OMNEEDIA",
+			"version": "0.9.0",
+			"src": [
+				"@omneedia/ajax/libs/socket.io/2.0.3/socket.io.js",
+				"@omneedia/omneedia/{version}/utils.modules.js",
+				"@omneedia/omneedia/{version}/app.js",
+				"@omneedia/omneedia/{version}/app.modules.js"
+			],
+			"res": [
+				"@omneedia/ajax/libs/animate.css/3.5.2/animate.css",
+				"@omneedia/omneedia/{version}/res/webapp.css",
+				"Contents/Resources/webapp.css"
+			],
+			"i18n": [
+				"@omneedia/omneedia/{version}/libs/Date/date-{lang}.js",
+				"@omneedia/omneedia/{version}/i18n/{lang}.json"
+			]
+		}
     ],
     "auth": [],
-    "paths": {},
     "controllers": [
         "CMain"
     ],
