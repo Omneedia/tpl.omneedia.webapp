@@ -3,7 +3,7 @@
 }
 
 .qxAboutLogo {
-    background-image: url(startup/logo.png);
+    background-image: url(webapp/logo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 128px 128px;
