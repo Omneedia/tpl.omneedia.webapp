@@ -7,11 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<script>
 		Kickstart={
-			load: function() {
+			load: function(cb) {
 				document.getElementById('appLoadingIndicator').style.display="none";
 				var appLoadingIcon=document.getElementById('appLoadingIcon');
 				appLoadingIcon.classList.remove('slideInDown');
 				appLoadingIcon.classList.add('slideOutUp');
+				if (cb) cb();
 			},
 			ready: function() {
 				document.getElementById('bootstrap').classList.add('fadeOut');
