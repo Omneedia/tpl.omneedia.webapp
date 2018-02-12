@@ -26,14 +26,6 @@ html, body {
 	margin: 0.5rem 0 1rem 0;
 	overflow: hidden
 }
-.progress .determinate {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	background-color: {COLOR};
-	transition: width .3s linear
-}
 .progress .indeterminate {
 	background-color: {COLOR};
 }
