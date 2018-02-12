@@ -2,7 +2,7 @@
 
 ## tpl.omneedia.webapp
 
-Omneedia webapp template
+Package description goes here
 
 Copyright (c) 2016 By OMNEEDIA
 
