@@ -57,7 +57,7 @@
 				"@omneedia/ajax/libs/socket.io/2.0.3/socket.io.js",
 				"@omneedia/omneedia/{version}/utils.modules.js",
 				"@omneedia/omneedia/{version}/app.js",
-				"@omneedia/omneedia/{version}/app.modules.js"
+				"@omneedia/omneedia/{version}/extjs.modules.js"
 			],
 			"res": [
 				"@omneedia/ajax/libs/animate.css/3.5.2/animate.css",
