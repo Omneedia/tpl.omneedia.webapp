@@ -81,6 +81,12 @@
     ],
     "db": [],
     "packages": [],
+    "jobs": [
+
+    ],
+    "processes": [
+        "demo"
+    ],
     "icon": {
         "background": "#FFFFFF",
         "file": "app.png"
